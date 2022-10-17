@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <!--BOOTSTRAP CDN --> 
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+	<!--FONTAWESOME CDN-->
+        <script src="https://kit.fontawesome.com/9ca6a37d83.js" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( ".datepicker" ).datepicker();
+        } );
+        </script>
+
+        <style>
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            #resimler{
+                width: 1px;
+                height: 1px;
+            }
+            .bos{
+                margin-left: 10%;
+                float:right;
+            }
+            
+        </style>
+       
+    </head>
+    <body>
+        <!--Başlangıç-->
+        <div class="container">
+            <div class="row">
+                <div class="col-3 col-sm-4 py-2">
+                <img src="\resimler\ucuzabilet.png" alt="" width="40%">
+                <i class="fa-solid fa-plane"></i>&nbsp; UÇAK
+                <i class="fa-solid fa-hotel"></i>&nbsp; OTEL
+                </div>
+                <div class="col-3 col-sm-4">
+                    <div class="dropdown float-end">
+                        <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Online işlemler
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3 col-sm-2 py-2">
+                    <a href="#"><i class="fa-regular fa-user"></i>Giriş Yap/ Üye ol</a> 
+                </div>
+                <div class="col-2">
+                    <ul>
+                        <li class="nav-item dropdown py-2">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="\resimler\turkey.png" alt="" height="20px">
+                            <span class="mx-2">TRY</span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#"><img src="\resimler\united-states.png" alt=""
+                                        height="20px"><span class="mx-2">English</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="\resimler\france.png" alt="" height="20px"><span
+                                        class="mx-2">French</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="\resimler\germany.png" alt=""
+                                        height="20px"><span class="mx-2">German</span></a></li>
+                            <li><a class="dropdown-item" href="#"><img src="\resimler\italy.png" alt="" height="20px"><span
+                                        class="mx-2">İtalian</span></a></li>
+                        </ul>
+                    </li>
+                </div>
+            </div>
+            
+
+           
+
+            
+        </div> 
+        <div class="container py-3">
+           <!-- <div class="row-">
+                <div class="col-3 col-sm-12"><h2>Alaturka Pansiyon</h2></div>
+                <div class="col-4 col-sm-12 justify-content-end"><a class="bos" href="#"><i class="fa-regular fa-heart"></i>&nbsp; Beğen</a><a href="#" class="bos"><i class="fa-solid fa-share"></i>&nbsp; Paylaş</a></div>
+                <div class="col-5 col-sm-12 py-3 px-0"><p>Anasayfa/ Antalya Otelleri / Alaturka Pansiyon</p></div>
+                
+            </div><!-->
+                <div class="row">
+                    <div class="col-3 col-sm-2 col-md-3"><h2>Alaturka Pansiyon</h2></div>
+                    <div class="col-5 py-3 col-sm-6 col-md-5"><p>Anasayfa/ Antalya Otelleri / Alaturka Pansiyon</p></div>
+                    <div class="col-4 py-3 col-sm-4 col-md-4"><a class="bos justify-content-end" href="#"><i class="fa-regular fa-heart"></i>&nbsp; Beğen</a><a href="#" class="bos"><i class="fa-solid fa-share"></i>&nbsp; Paylaş</a></div>
+                </div>
+            <div class="container">
+            <i class="fa-solid fa-location-dot"></i>&nbsp; Kemer Göynük, Antalya
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-6" id="resim1"><img src="\resimler\otel1.jpg" width="100%"></div>
+                <div class="col-6" id="resim2"><img src="\resimler\otel2.jpg" width="100%" height="200vr">
+                    <div class="col-6 float-start py-1" id="resim3"><img src="\resimler\otel3.jpg"  width="100%" height="220vr"></div>
+                    <div class="col-6 float-start py-1 px-1 justify-content-end" id="resim3"><img src="\resimler\otel4.jpg"  width="100%" height="220vr"></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--Resimler sonrası-->
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-3"><a href="#oda_secenekleri"><p>Oda seçenekleri</p></a></div>
+                <div class="col-3"><a href="#genel_bilgi"><p>Genel Bilgi</p></a></div>
+                <div class="col-3"><a href="#tesis_olanaklari"><p>Tesis Olanakları</p></a></div>
+                <div class="col-2"><a href="#detayli_bilgi"><p>Detaylı Bilgi</p></a></div>
+                <div class="col-1"><a href="#yorumlar"></a><p>Yorumlar</p></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <div class="input-group flex-nowrap">
+                    <input type="text" class="form-control" placeholder="Otel, Şehir, Bölge" aria-label="Username" aria-describedby="addon-wrapping">
+                  </div>
+                </div>
+                <div class="col-2">
+                    <input type="text" class="datepicker" style="width: 100%;" placeholder="gg.aa.yy">
+                </div>
+                <div class="col-2">
+                    <input type="text" class="datepicker" style="width: 100%;" placeholder="gg.aa.yy">
+                </div>
+                <div class="col-2">
+                    <div class="btn btn-warning bg-opacity-100 px-4">4 gece</div>
+                </div>                
+                <div class="col-2">
+                    
+                    <div class="dropdown">
+                        <button class="btn  dropdown-toggle justify-content-start" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          4 gece <br> 1 Oda &nbsp;<i class="fa-solid fa-moon float-end py-1"></i> <br>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-2"><button class="btn btn-warning w-100"><b>ARA</b></button></div>
+            </div>
+        </div>
+        <!--Tesis olanakları-->
+        <div class="container py-3">
+            <div class="row" id="tesis_olanaklari">
+                <div class="col-3">
+                    <div class="col">
+                        <p><i class="fa-regular fa-face-smile"></i>&nbsp; Çocuk Dostu</p>
+                        <p><i class="fa-solid fa-umbrella-beach"></i>&nbsp; Özel Plaj</p>
+                    </div>
+                </div>
+                <div class="col-5 text-start">
+                    <p><i class="fa-solid fa-umbrella-beach"></i>&nbsp; Denizi kum</p>
+                    <p><i class="fa-regular fa-circle-check"></i>&nbsp; Güvenli Turizim Sertifikalı Otel</p>
+                </div>
+                <div class="col-4 bg-warning bg-opacity-10 text-center">
+                    <br>
+                    <p class="justify-content-end">Güvenli Turizim Sertifikalı Tesis</p>
+                </div>
+            </div>
+            <br>
+            
+            <!--Genel bilgi-->
+            <div class="row" id="genel_bilgi">
+                <div class="col-md-8 col-sm-1"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras rhoncus vel ligula ut sodales. Suspendisse id metus a nulla eleifend feugiat in nec neque. Donec ut porttitor lacus. Nam mattis, metus nec ultrices pharetra, est turpis condimentum sapien, id laoreet purus eros vel lacus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi vehicula purus id eros blandit molestie. Proin semper purus eget dolor tempor faucibus.
+
+                    Proin ipsum tortor, cursus a placerat eget, malesuada eget orci. Aliquam ultrices lorem vitae arcu gravida lobortis vitae a sapien. Nullam ante velit, congue eu eleifend ac, varius sed lorem. Nam purus mi, maximus at turpis eu, sollicitudin molestie eros. Suspendisse iaculis, dui a pharetra dapibus, velit lorem euismod augue, non rutrum ante erat sed neque. Vivamus consectetur hendrerit arcu id suscipit. Integer maximus, purus vitae dignissim fringilla, dolor enim facilisis velit, in pellentesque diam justo pellentesque ipsum. Nam placerat, odio quis cursus tempor, libero odio porttitor ipsum, sed vehicula enim orci id augue. Sed vitae metus ut mauris pellentesque aliquet. Morbi dignissim tellus ante, et pretium sapien elementum vitae. Nunc ornare magna non purus cursus vestibulum. Integer eget odio vitae velit tempor vestibulum. Mauris a dui lacus. Ut vulputate a leo in hendrerit. Integer eu ultricies neque. Ut semper placerat ante, at gravida leo tincidunt sit amet.</p>
+                </div>
+                <div class="col-md-4 col-sm-1 d-flex justify-content-end visually-hidden-xs"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25623.961110822846!2d30.527190398478144!3d36.6024261217109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14c3b7a4820a22e7%3A0x973532648469d291!2sKemer%2C%20Antalya!5e0!3m2!1str!2str!4v1666003863276!5m2!1str!2str" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+
+            <!--Oda Seçenekleri-->
+            <div class="row">
+                <div class="col" id="oda_secenekleri">
+                    <h2>Oda Seçenekleri</h2>
+                </div>
+            </div>
+            <div class="row border" id="tesis_olanaklari">
+                <div class="col-3 py-1">
+                    <img src="\resimler\otel3.jpg" width="100%">
+                </div>
+                <div class="col-3">
+                    <h4>Superior Kara Manzaralı</h4>
+                    <p>Çift Kişilik Geniş Yatak</p>
+                    <p>3 Kişilik</p>
+                    <p>30m<sup>2</sup></p>
+                    <br>
+                    <p><a href="" >Detaylı Oda Bilgisi</a></p>
+                </div>
+                <div class="col-3 py-5">
+                    <p>Oda Kahvaltılı</p>
+                    <p>0-6 yaş arası 1 çocuk ücretsiz</p>
+                    <p>Ücretsiz İptal</p>
+                </div>
+                <div class="col-3 py-5 text-end">
+                    <p>3 Gece İçin Toplam:</p>
+                    <p>1900 TL</p>
+                    <button class="btn btn-outline-warning"><b><b>Odayı Seç </b> </b></button>
+                </div>
+            </div>
+
+            <div class="row border" id="deyali_bilgi">
+                <div class="col-3 py-1">
+                    <img src="\resimler\otel3.jpg" width="100%">
+                </div>
+                <div class="col-3">
+                    <h4>Superior Family Plus</h4>
+                    <p>Çift Kişilik Geniş Yatak</p>
+                    <p>3 Kişilik</p>
+                    <p>30m<sup>2</sup></p>
+                    <br>
+                    <p><a href="#">Detaylı Oda Bilgisi</a></p>
+                </div>
+                <div class="col-3 py-5">
+                    <p>Oda Kahvaltılı</p>
+                    <p>0-6 yaş arası 1 çocuk ücretsiz</p>
+                    <p>Ücretsiz İptal</p>
+                </div>
+                <div class="col-3 py-5 text-end">
+                    <p>3 Gece İçin Toplam:</p>
+                    <p>1900 TL</p>
+                    <button class="btn btn-outline-warning"><b>Odayı Seç </b></button>
+                </div>
+            </div>
+
+            <div class="row border">
+                <div class="col-3 py-1">
+                    <img src="\resimler\otel3.jpg" width="100%">
+                </div>
+                <div class="col-3">
+                    <h4>Deniz Manzaralı</h4>
+                    <p>Çift Kişilik Geniş Yatak</p>
+                    <p>3 Kişilik</p>
+                    <p>30m<sup>2</sup></p>
+                    <br>
+                    <p><a href="#">Detaylı Oda Bilgisi</a></p>
+                </div>
+                <div class="col-3 py-5">
+                    <p>Oda Kahvaltılı</p>
+                    <p>0-6 yaş arası 1 çocuk ücretsiz</p>
+                    <p>Ücretsiz İptal</p>
+                </div>
+                <div class="col-3 py-5 text-end">
+                    <p>3 Gece İçin Toplam:</p>
+                    <p>1900 TL</p>
+                    <button class="btn btn-outline-warning"><b>Odayı Seç </b></button>
+                </div>
+            </div>
+
+            <!--Tesis olanakları-->
+            <div class="row" id="tesis_olanaklari">
+                <div class="col">
+                    <br>
+                    <h2>Tesis Olanakları</h2>
+                </div>
+            </div>
+            <div class="row border py-4">
+                <div class="col-3">
+                    <p>24 saat resepsiyon</p>
+                    <p>Emanet Kasası</p>
+                </div>
+                <div class="col-3">
+                    <p>Halk Plajı</p>
+                    <p>Kiralık Kasa</p>
+                </div>
+                <div class="col-3">
+                    <p>Hızlı Giriş/Çıkış</p>
+                    <p>Kahvaltı salonu <button class="btn btn-outline-warning disabled">Ücretli</button></p>
+                </div>
+                <div class="col-3">
+                    <p>Bagaj odası</p>
+                    <p>Kapalı Restoran <button class="btn btn-outline-warning disabled">Ücretli</button></p>
+                </div>
+            </div>
+
+            <!--Akordiyon-->
+            <div class="row" id="detayli_bilgi">
+                <div class="col">
+                    <br>
+                    <h2>Detaylı Bilgi</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="accordion col-6" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="height:10rem;">
+                        <div>
+                            <i class="fa-regular fa-square-full fa-2xl"></i>
+                            
+                            <h3 style="margin-top: 15%;">Büyüklük Bilgisi</h3>
+                        </div>
+
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="height:10rem;">
+                          <div>
+                            <i class="fa-solid fa-champagne-glasses fa-2xl"></i>
+                            <h3 style="margin-top: 15%;">Balayı</h3>
+                          </div>
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-6 border">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne" style="height:10rem;">
+                            <div>
+                                <i class="fa-solid fa-water-ladder fa-2xl"></i>
+                               <h3 style="margin-top:15%;">Deniz&Havuz</h3>
+                            </div>
+                                 
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo" style="height: 10rem;">
+                                <div>
+                                    <i class="fa-solid fa-utensils fa-2xl"></i>
+                                   <h3 style="margin-top:15%;">Yeme İçme</h3>
+                                </div>
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+
+                <!--Yorumlar-->
+                <!--<div class="row " id="yorumlar">
+                    <div class="col">
+                        <br>
+                        <h2>Yorumlar</h2>
+                    </div>
+                </div>
+                <div class="row border">
+                    <div class="col-5">
+                        <div class="row justify-content-center">
+                            <div class="col-1 bg-secondary text-end py-1">
+                                <h4 class="h4">8.2</h4>
+                            </div>
+                            <div class="col-2 bg-secondary">
+                                <p>Çok iyi</p>
+                                <p>51 Yorum</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                        <button type="button" class="btn btn-outline-secondary">Tüm Yorumlar</button>
+                        <button type="button" class="btn btn-outline-secondary">Aile</button>
+                        <button type="button" class="btn btn-outline-secondary">Çiftler</button>
+                        <button type="button" class="btn btn-outline-secondary">Tek Misafirler</button>
+                        <button type="button" class="btn btn-outline-secondary">Arkadaşlar</button>
+                        <button type="button" class="btn btn-outline-secondary">İş Seyahati</button>
+                    </div>
+                </div>-->
+                <div class="row my-5" id="list-item-5">
+                    <div class="col-12">
+                        <h2>
+                            Yorumlar
+                        </h2>
+                    </div>
+                    <div class="col-12 room-details my-2">
+                        <div class="row" style="align-items: baseline;">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 col-xxl-3 my-3">
+                                <div class="row me-3 d-flex p-2 justify-content-center align-items-center"
+                                    style="background-color: grey;">
+                                    <h1 class="col m-auto p-auto  " style="text-align: center; border-right: 2px solid black;">8.2</h1>
+                                    
+                                    <div
+                                        class="col-6 col-sm-6 col-md-6 col-lg-auto col-xl-auto col-xxl-auto ms-5 m-auto p-auto d-flex flex-column justify-content-start align-items-center" >
+                                        <p class="d-inline" style="margin: 0; padding:0 ;align-self: start;">Çok İyi</p>
+                                        <p class="d-inline" style="margin: 0; padding:0;align-self: start;">51 Yorum</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="btn btn-outline-secondary mt-2">Tüm Yorumlar</div>
+                                <div class="btn btn-outline-secondary mt-2">Aileler</div>
+                                <div class="btn btn-outline-secondary mt-2">Çiftler</div>
+                                <div class="btn btn-outline-secondary mt-2">Tek Misafirler</div>
+                                <div class="btn btn-outline-secondary mt-2">Arkadaşlar</div>
+                                <div class="btn btn-outline-secondary mt-2">İş Seyahati</div>
+                            </div>
+                            <div class="row justify-content-between">
+    
+                                <div class="col-12 my-2 p-2" style="border: 1px solid whitesmoke; border-radius: 8px;">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="\resimler\user.png" alt=""
+                                                width="32px" height="32px">
+                                            <div class="d-flex flex-column ms-2">
+                                                <p style="margin: 0; padding:0"><strong>Misafir</strong></p>
+                                                <p style="margin: 0; padding:0">Haziran 2022</p>
+                                            </div>
+    
+                                        </div>
+                                        <div>10.0 Mükemmel </div>
+    
+                                    </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolor architecto
+                                        in, est, mollitia suscipit similique beatae ea, officia quos temporibus soluta
+                                        doloribus. Eveniet praesentium corporis labore, unde odit ex!</p>
+    
+    
+                                </div>
+                                <div class="col-12 my-2  p-2" style="border: 1px solid whitesmoke; border-radius: 8px;">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="\resimler\user.png" alt=""
+                                                width="32px" height="32px">
+                                            <div class="d-flex flex-column ms-2">
+                                                <p style="margin: 0; padding:0"><strong>Misafir</strong></p>
+                                                <p style="margin: 0; padding:0">Haziran 2022</p>
+                                            </div>
+    
+                                        </div>
+                                        <div>10.0 Mükemmel </div>
+    
+                                    </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolor architecto
+                                        in, est, mollitia suscipit similique beatae ea, officia quos temporibus soluta
+                                        doloribus. Eveniet praesentium corporis labore, unde odit ex!</p>
+    
+    
+                                </div>
+                                <div class="col-12 my-2  p-2" style="border: 1px solid whitesmoke; border-radius: 8px;">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <img src="\resimler\user.png" alt=""
+                                                width="32px" height="32px">
+                                            <div class="d-flex flex-column ms-2">
+                                                <p style="margin: 0; padding:0"><strong>Misafir</strong></p>
+                                                <p style="margin: 0; padding:0">Haziran 2022</p>
+                                            </div>
+    
+                                        </div>
+                                        <div>10.0 Mükemmel </div>
+    
+                                    </div>
+                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt dolor architecto
+                                        in, est, mollitia suscipit similique beatae ea, officia quos temporibus soluta
+                                        doloribus. Eveniet praesentium corporis labore, unde odit ex!</p>
+    
+    
+                                </div>
+    
+                                <div class="d-grid my-2">
+                                    <button class="btn btn-outline-secondary" type="button">Load More</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+              
+              
+            </div>
+            <br>
+        </div>
+    </body>
+</html>
